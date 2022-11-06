@@ -1,5 +1,5 @@
-Aqui se encuentra la documentación y pasos necesarioa para poder realizar una app web,
-la cual consta de almacenar libros deseas por el usuario y los cuales se seccionan por su genero
+Aqui se encuentra la documentación y pasos necesarios para poder realizar una app web,
+la cual consta en la almacenación de libros deseados por el usuario, los cuales serán seccionados por su genero/categoria
 
 Documentación:
 - Mock Ups
