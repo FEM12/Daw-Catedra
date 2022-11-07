@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../Css/Registro_Secundario.css">
+    <script defer src="../Js/Registro_Secundario.js"></script>
 
     <title> Agregar a lista de libros </title>
 
@@ -19,16 +20,16 @@
 
     <main>
 
-      <div class="container">
+      <div id="init" class="container">
 
         <div class="sombra"></div>
 
         <div class="campos">
 
-          <input type="text" placeholder="Nombre">
-          <input type="text" placeholder="Autor">
+          <input id="nombre" type="text" placeholder="Nombre">
+          <input id="autor" type="text" placeholder="Autor">
           
-          <button> Añadir a lista de deseos </button>
+          <button id="save"> Añadir a lista de deseos </button>
           <a href="#co-1"> <button> ver lista </button> </a>
 
         </div>
@@ -39,7 +40,7 @@
 
         <div class="message"> <p> Lista de deseos </p> </div>
   
-        <div class="cuerpo">
+        <!-- <div class="cuerpo">
   
           <p>Nombre del libro</p>
   
@@ -49,11 +50,13 @@
   
           </div>
   
-        </div>
+        </div> -->
   
       </div>  
 
     </main>
+
+    <a href="#init"> <button class="inicio">↑</button> </a>
     
   </body>
 

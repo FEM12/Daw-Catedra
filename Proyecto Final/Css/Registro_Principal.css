@@ -86,14 +86,14 @@ button:hover{ background-color: #ddd; }
 
 /* Libros */
 
-.container-2{ width: 100%; height: 100vh; background-color: #EEE; overflow: hidden; }
+.container-2{ width: 100%; min-height: 100vh; background-color: #EEE; overflow: hidden; }
 
 .generos{ 
 
   width: 10%;
   height: 40px;
-  margin: 10px auto;
-  background-color: aqua; 
+  margin: 20px auto;
+  background-color: #D9D9D9; 
   text-align: center;
   border-radius: 8px; 
   display: flex;
@@ -104,19 +104,29 @@ button:hover{ background-color: #ddd; }
 
 .libro{
 
-  width: 120px;
+  width: 245px;
   height: 100px;
   background-color: #15C69A;
+  padding: 8px;
   border-radius: 8px;
   display: inline-block;
-  margin: 22px;
+  overflow: hidden;
+  margin: 0px 0px 20px 20px;
+
   box-shadow: 7px 7px 0px 0px rgba(201,208,207,1);
 
 }
 
-.libro p:nth-child(1){ font-weight: bold; }
+.libro p:nth-child(1){ font-weight: bold; text-align: center; }
 
-.libro p:nth-child(2){ font-size: 15px; }
+.libro p:nth-child(2){ 
+  
+  font-size: 15px; 
+  text-align: center; 
+  margin-top: 5px;
+  font-style: italic;
+
+}
 
 .centro{
 
@@ -128,3 +138,19 @@ button:hover{ background-color: #ddd; }
   align-items: center;
 
 }
+
+.inicio{
+
+  outline: none;
+  border: none;
+  background-color: #F1C21C;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+
+}
+
+.inicio:hover{ background-color: #d8ae18; color: #FFF;}
