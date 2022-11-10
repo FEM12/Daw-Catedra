@@ -21,8 +21,7 @@ document.getElementById("guardar").addEventListener("click", function(){
   
   </div>
   
-  
   `;
-
-
+  
 })
+
