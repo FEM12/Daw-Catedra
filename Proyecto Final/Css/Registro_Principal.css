@@ -3,7 +3,7 @@
 
 ::-webkit-scrollbar{ width: 0; }
 
-html{ scroll-behavior: smooth; }
+html{ scroll-behavior: smooth; transition: 2s;}
 
 *{ 
 
