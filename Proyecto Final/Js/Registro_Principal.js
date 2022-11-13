@@ -33,9 +33,9 @@ function mostrarLib () {
       
       contenedorLib.innerHTML += `
       
-        <div class="cuerpo">
+      <div class="libro">
     
-          <div class="sub_cuerpo">
+          <div class="centro">
         
             <p> ${e.nombre} </p>
             <p> ${e.autor} </p>
@@ -61,7 +61,7 @@ document.getElementById('guardar').addEventListener('click', (e) => {
   let txtautor = document.getElementById('author').value;
 
   crearLibro(txtnombre, txtautor);
-  crearLibro();
+  guardarLibro();
 
 })
 
