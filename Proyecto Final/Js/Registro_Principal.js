@@ -1,27 +1,68 @@
 
-document.getElementById("guardar").addEventListener("click", function(){
+//Variables a nivel global
+const contenedorLib = document.getElementById('co');
+let libArray = [];
 
-  const name = document.getElementById("Name").value;
-  const author = document.getElementById("Author").value;
-  const gen = document.getElementById("Gen").value;
+//Funciones
+const crearLibro = (nombreLibro, autorLibro) => {
 
-  
-  const add = document.getElementById("co");
-  add.innerHTML += `
-  
-  <div class="libro">
-  
-    <div class="centro">
-  
-      <p> ${name} </p>
+  let Libro = { nombre:nombreLibro, autor:autorLibro };
+  libArray.push(Libro);
 
-        <p> ${author} </p>
+  return Libro;
+}
+
+function guardarLibro () { 
   
-      </div>
-  
-  </div>
-  
-  `;
-  
+  localStorage.setItem('libros', JSON.stringify(libArray)); 
+
+  mostrarLib();
+
+}
+
+function mostrarLib () {
+
+  contenedorLib.innerHTML = '';
+
+  libArray = JSON.parse(localStorage.getItem('libros'));
+
+  if(libArray === null){ libArray = []; }
+  else{
+
+    libArray.forEach(e => {
+      
+      contenedorLib.innerHTML += `
+      
+        <div class="cuerpo">
+    
+          <div class="sub_cuerpo">
+        
+            <p> ${e.nombre} </p>
+            <p> ${e.autor} </p>
+
+          </div>
+
+        </div>
+      
+      `
+
+    });
+
+  }
+
+
+}
+
+//Eventos
+
+document.getElementById('guardar').addEventListener('click', (e) => {
+
+  let txtnombre = document.getElementById('name').value;
+  let txtautor = document.getElementById('author').value;
+
+  crearLibro(txtnombre, txtautor);
+  crearLibro();
+
 })
 
+document.addEventListener('DOMContentLoaded', mostrarLib);
