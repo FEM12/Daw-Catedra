@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
+::-webkit-scrollbar{ width: 0; }
+
+html{ scroll-behavior: smooth; }
+
+*{ 
+
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+  font-family: 'Roboto', sans-serif; 
+  user-select: none;
+  font-size: 18px;
+
+}
+
+main{ background-color: #EEE; }
+
+.container{ 
+  
+  width: 100%; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sombra{ 
+  
+  width: 55%; 
+  height: 460px; 
+  border-radius: 8px;
+  background-color: #C39C35; 
+  position: absolute;
+  transform: rotate(15deg);
+
+}
+
+.campos{
+
+  width: 55%; 
+  height: 460px; 
+  border-radius: 8px;
+  background-color: #F1C21C;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+}
+
+.campos input{
+
+  width: 70%;
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #eee;
+  outline: none;
+  text-align: center;
+
+}
+
+input::placeholder{ color: #000; }
+
+.campos button{
+
+  width: 210px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: #eee;
+  cursor: pointer;
+
+}
+
+button:hover{ background-color: #ddd; }
+
+/* lista */
+
+.container-3{ width: 100%; min-height: 100vh; overflow: hidden; }
+
+.message{
+
+  width: 30%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #57B3E8;
+  text-align: center;
+  border-radius: 8px;
+
+}
+
+.cuerpo{ 
+  
+  width: 50%; 
+  margin: 20px auto; 
+  background-color: #D9D9D9; 
+  border-radius: 8px;
+  position: relative;
+  padding-left: 160px;
+
+}
+
+.cuerpo p{ display: inline-block; padding: 6px; }
+
+.sub_cuerpo{
+
+  width: 40%;
+  background-color: #EFA7A7;
+  border-radius: 8px;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  text-align: center;
+
+}
+
+.inicio{
+
+  outline: none;
+  border: none;
+  background-color: #01B0F1;
+  border-radius: 5px;
+  padding: 10px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+
+}
+
+.inicio:hover{ background-color: #039bd3; color: #FFF;}
