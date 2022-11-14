@@ -13,7 +13,7 @@ html{ scroll-behavior: smooth; }
   font-family: 'Roboto', sans-serif; 
   user-select: none;
   font-size: 18px;
-  transition: 2s;
+  overflow: hidden;
 
 }
 
@@ -22,7 +22,7 @@ main{ background-color: #EEE; }
 .container{ 
   
   width: 100%; 
-  height: 100vh; 
+  min-height: 100vh; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,7 +59,7 @@ main{ background-color: #EEE; }
 .campos input{
 
   width: 70%;
-  height: 50px;
+  height: 45px;
   padding: 5px;
   border: none;
   border-radius: 8px;
@@ -74,7 +74,7 @@ input::placeholder{ color: #000; }
 .campos button{
 
   width: 210px;
-  height: 50px;
+  height: 45px;
   padding: 10px;
   border-radius: 8px;
   border: none;
@@ -101,28 +101,41 @@ button:hover{ background-color: #ddd; }
 
 }
 
-.cuerpo{ 
-  
-  width: 50%; 
-  margin: 20px auto; 
-  background-color: #D9D9D9; 
+.listas{ width: 60%; margin: 0px auto;}
+
+.union{ 
+
+  width: 100%;
+  margin-top: 15px;
+  background-color: #D9D9D9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 8px;
-  position: relative;
-  padding-left: 160px;
 
 }
 
-.cuerpo p{ display: inline-block; padding: 6px; }
+.cuerpo{
+
+  width: 60%;
+  height: 40px;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
 
 .sub_cuerpo{
 
   width: 40%;
+  height: 40px;
   background-color: #EFA7A7;
-  border-radius: 8px;
   display: inline-block;
-  position: absolute;
-  right: 0;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
 
 }
 

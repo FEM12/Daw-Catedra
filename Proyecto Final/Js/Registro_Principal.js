@@ -35,14 +35,9 @@ function mostrarLib () {
       
       <div class="libro">
     
-          <div class="centro">
-        
-            <p> ${e.nombre} </p>
-            <p> ${e.autor} </p>
+        <div class="centro"> <p> ${e.nombre} </p> <p> ${e.autor} </p> </div>
 
-          </div>
-
-        </div>
+      </div>
       
       `
 
@@ -59,9 +54,15 @@ document.getElementById('guardar').addEventListener('click', (e) => {
 
   let txtnombre = document.getElementById('name').value;
   let txtautor = document.getElementById('author').value;
+  let txtgenero = document.getElementById('gen').value;
 
-  crearLibro(txtnombre, txtautor);
-  guardarLibro();
+  if(txtnombre == '' || txtautor == '' || txtgenero == ''){ alert('Por favor rellene todos los campos') }
+  else{ 
+
+    crearLibro(txtnombre, txtautor);
+    guardarLibro();
+
+   }
 
 })
 
