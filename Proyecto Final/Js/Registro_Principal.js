@@ -62,7 +62,7 @@ document.getElementById('guardar').addEventListener('click', (e) => {
     crearLibro(txtnombre, txtautor);
     guardarLibro();
 
-   }
+  }
 
 })
 
