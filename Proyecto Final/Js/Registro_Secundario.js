@@ -61,6 +61,9 @@ document.getElementById('save').addEventListener('click', (e) => {
 
     createList(txtnombre, txtautor);
     saveList();
+    
+    document.getElementById('nombre').value = '';
+    document.getElementById('autor').value = '';
 
   }
   
