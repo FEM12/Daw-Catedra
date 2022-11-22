@@ -31,7 +31,7 @@ function addList () {
       
       lblCo.innerHTML += `
       
-      <div id="co-1" class="listas">
+      <div class="listas">
 
         <div class="union">
 
