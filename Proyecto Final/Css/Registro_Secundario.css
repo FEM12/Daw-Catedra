@@ -80,10 +80,11 @@ input::placeholder{ color: #000; }
   outline: none;
   background-color: #eee;
   cursor: pointer;
+  transition: 0.5s;
 
 }
 
-button:hover{ background-color: #ddd; }
+button:hover{ background-color: #ccc; transition: 0.5s; }
 
 /* lista */
 
@@ -149,7 +150,8 @@ button:hover{ background-color: #ddd; }
   bottom: 10px;
   right: 10px;
   cursor: pointer;
+  transition: 0.5s;
 
 }
 
-.inicio:hover{ background-color: #039bd3; color: #FFF;}
+.inicio:hover{ background-color: #039bd3; color: #FFF; transition: 0.5s; }
